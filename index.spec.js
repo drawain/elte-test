@@ -41,11 +41,10 @@ describe('Library', function() {
   });
 
 
-
   describe('POST /books', function() {
 
     beforeEach(function(done) {
-      request(app).delete('/books').end(done);
+      request(app).delete('/book').end(done);
     });
 
 
